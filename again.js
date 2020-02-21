@@ -109,3 +109,30 @@ class Pet{
 //class.action
 //class name lalabas
 
+// feb 21
+
+class bpplant{
+    constructor(color, move){
+        this.color = color;
+        this.move = move;
+    }
+
+    action1(water){
+        alert(`The plant is color ${this.color} and absorbs ${water} ml of water`);
+    }
+}
+
+class waterlily extends bpplant{
+    constructor(color, move, surface){
+        super(color, move);
+        this.surface = surface;
+    }
+
+    floats(speed){
+        alert(`This waterlily has a color of ${this.color} and floats forward at ${speed} kph`);
+    }
+}
+
+// child can point to parent object
+// child = parent
+
